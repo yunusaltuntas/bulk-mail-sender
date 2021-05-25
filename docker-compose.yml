@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app:
+    container_name: mail_application
+    build: .
+    command: bash -c "cd /app && python main.py"
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 5
+        window: 120s 
+    volumes:
+      - ./:/app

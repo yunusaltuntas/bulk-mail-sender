@@ -1,0 +1,6 @@
+{
+	"sender":"senderMail",
+	"password":"pass",
+	"receiver":["receivers"],
+	"message" :"hello i am mailApp"
+}
